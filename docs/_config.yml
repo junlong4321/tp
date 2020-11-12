@@ -10,6 +10,7 @@ markdown: kramdown
 
 kramdown:
   toc_levels: [2,3,4]
+  parse_block_html: true
 
 repository: "AY2021S1-CS2103T-T10-4/tp"
 github_icon: "images/github-icon.png"

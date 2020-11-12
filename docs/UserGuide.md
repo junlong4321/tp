@@ -7,8 +7,12 @@ title: User Guide
 
 # Tutor's Pet - User Guide
 
+<div class="toc">
+
 1. Table of Contents
 {:toc}
+
+</div>
 
 ## Introduction
 
