@@ -7,12 +7,18 @@ title: User Guide
 
 # Tutor's Pet - User Guide
 
+<p style="page-break-before: always"/>
+
 <div class="toc">
+
+<h2>Content Page</h2>
 
 1. Table of Contents
 {:toc}
 
 </div>
+
+<p style="page-break-before: always"/>
 
 ## Introduction
 
@@ -55,6 +61,8 @@ This guide uses the following features to make it easier for you to navigate aro
 </div>
 
 --------------------------------------------------------------------------------------------------------------------
+
+<p style="page-break-before: always"/>
 
 ## Quick Start
 This section provides information on how to quickly start using Tutor's Pet.
@@ -150,6 +158,8 @@ The utility area consists of three tabs: **File**, **Theme** and **Help**.
 
 --------------------------------------------------------------------------------------------------------------------
 
+<p style="page-break-before: always"/>
+
 ## Commands
 
 Commands are the main way you interact with your Tutor's Pet.
@@ -189,6 +199,8 @@ This section details the format of the commands available in Tutor's Pet. We wil
   e.g. `13:00` is allowed, but not `1300`.
 
 </div>
+
+<p style="page-break-before: always"/>
 
 ### Command Overview
 
@@ -230,6 +242,8 @@ This section provides an overview of all commands in Tutor's Pet and illustrates
 
 The following subsections will elaborate on the specific details of each Tutor's Pet command.
 
+<p style="page-break-before: always"/>
+
 ### General
 
 #### Viewing help : `help`
@@ -256,7 +270,7 @@ For example:
 1. Now, you can see all your students and classes.
 
    ![List after](images/ugimages/ListAfter.png)
-
+   
 #### Undoing a previous change : `undo`
 
 If you have accidentally entered a command that permanently changes the data in your Tutor's Pet,
