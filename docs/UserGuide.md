@@ -16,8 +16,8 @@ Tutor's Pet is a **student management application** for teaching assistants in N
 Tutor's Pet reduces the amount of time you spend on administrative tasks as a teaching assistant.
 It is a one stop solution to keep track of your classes and students.
 
-As a teaching assistant, administrative chores such as attendance taking and grading students' participation
-can be troublesome with existing solutions such as spreadsheets. This is why we have created Tutor's Pet, _a
+As a teaching assistant, even with spreadsheets, administrative chores such as attendance taking and grading students' participation
+can be troublesome. This is why we have created Tutor's Pet, _a
 solution for teaching assistants, by students._
 
 ## About
@@ -53,7 +53,7 @@ This guide uses the following features to make it easier for you to navigate aro
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start
-This section provides information on how to quickly start using Tutor's Pet.
+This section guides you to start using Tutor's Pet quickly.
 
 ### Installing Tutor's Pet
 
@@ -82,17 +82,19 @@ There are three main areas in Tutor's Pet:
 
 1. the utility area.
 
-The command box is the area for you to enter your commands. The result of each command will be shown in the result
-display box, which is located immediately below the command box.
+#### Command box and result display box
+
+The command box is the area for you to enter your commands. The result display box is where the result of each command is shown. It is located immediately below the command box.
 
 ![Command box and result display box](images/ugimages/CommandAndDisplayBox.png)
 
 <br/>
 
-* Type a command in the command box and press <kbd>Enter</kbd> to execute it.<br>
-   e.g. Type **`help`** and press <kbd>Enter</kbd> to open the help window.<br>
+Let us test out some commands to get a feel of the command box and result display box.
+To execute a command, type it into the command box and press <kbd>Enter</kbd>.
+For example, type **`help`** and press <kbd>Enter</kbd> to open the help window.<br>
 
-   Here are some example commands you can try:
+   Here are other commands you can try:
 
    * **`list`** : Lists all students and classes.
 
@@ -106,6 +108,8 @@ display box, which is located immediately below the command box.
    * **`exit`** : Exits the application.
 
 * Refer to the [Commands](#commands) section below for details of each command.
+
+#### Main viewing area
 
 The main viewing area consists of two sections: **Classes** and **Students**.
 
@@ -125,6 +129,8 @@ classes in Tutor's Pet.
   ![Student_section](images/ugimages/StudentPanel.png)
 
 <br/>
+
+#### Utility area
 
 The utility area consists of three tabs: **File**, **Theme** and **Help**.
 
@@ -224,7 +230,7 @@ This section provides an overview of all commands in Tutor's Pet and illustrates
 | **Undo**                          | `undo`                                                                                      |                                                                    |
 | **View change history**           | `view-history`                                                                              |                                                                    |
 
-The following subsections will elaborate on the specific details of each Tutor's Pet command.
+The following subsections will elaborate on each Tutor's Pet command.
 
 ### General
 
@@ -606,7 +612,7 @@ For example:
 Other examples:
 * `find-class CS2030 lab`<br>
   `edit-class 1 n\CS2030 lab L05`<br>
-  Edits the name of the 1st class in the result of the find command.
+  Edits the name of `CS2030 lab` to `CS2030 lab L05`.
 
 <div markdown="block" class="alert alert-primary">
 
@@ -680,7 +686,7 @@ For example:
 Other examples:
 * `find-class CS2030 lab`<br/>
   `delete-class 1`<br/>
-  Deletes the 1st class in the result of the `find-class` command.
+  Deletes the `CS2030 lab` class.
 
 #### Clearing all classes : `clear-class`
 
@@ -729,7 +735,7 @@ entered commands. This reduces the amount you need to type.
 Other examples:
 * `find-student Alex`<br/>
   `link s\1 c\2`<br/>
-  Adds the 1st result of the `find-student` command to the 2nd class in the displayed class list.
+  Adds the 1st student with name `Alex`, to the 2nd class in the displayed class list.
 
 #### Removing a student from a class : `unlink`
 
@@ -766,7 +772,7 @@ of a particular class. Now it is easier for you to find the student to remove.
 Other examples:
 * `list-student c\2`<br/>
   `unlink s\1 c\1`<br/>
-  [Lists the students](#listing-all-students-within-a-class--list-student) of the 2nd class in the displayed class list, and removes the 1st student of that class.
+  [Lists the students](#listing-all-students-within-a-class--list-student) of the 2nd class in your Tutor's Pet, say `CS2100 lab`. Then, removes the 1st student of `CS2100 lab`.
 
 ### Managing Lessons
 
@@ -838,7 +844,7 @@ For example:
 Other examples:
 *  `find-class CS2100 lab`\
 `edit-lesson c\1 l\1 d\TUESDAY st\10:00 et\12:00 v\COM2 #02-02`\
-Edits the 1st lesson of the CS2100 lab. The lesson will now be held on Tuesdays, 10:00AM to 12:00PM at COM2 #02-02.
+Edits the 1st lesson of `CS2100 lab`. The lesson will now be held on Tuesdays, 10:00AM to 12:00PM at COM2 #02-02.
 
 #### Deleting a lesson : `delete-lesson`
 
@@ -863,7 +869,7 @@ For example:
 Other examples:
 * `find-class CS2030 lab`<br>
   `delete-lesson c\1 l\1`<br>
-  Deletes the 1st lesson of the 1st class in the results of the `find-class` command.
+  Deletes the 1st lesson of `CS2030 lab`.
 
 <div markdown="block" class="alert alert-primary">
 
@@ -916,15 +922,10 @@ For example:
 
 Other examples:
 * `find-class CS2100 lab`<br>
-  `find-student bernice yu`<br>
+  `find-student Bernice Yu`<br>
   `add-attendance c\1 l\1 s\1 w\10 p\70`<br>
-  Adds the attendance of the 1st student to the 1st lesson of the 1st class in the results of the `find-` commands.<br>
-  Attendance recorded is for week 10 and student's participation score is 70.
-
-* `list-student c\1`<br>
-  `add-attendance c\1 l\1 s\2 w\5 p\50`<br>
-  Adds the attendance of the 2nd student in the results of the `list` command to the 1st lesson of the 1st class.<br>
-  Attendance recorded is for week 5 and student's participation score is 50.
+  Adds the attendance of `Bernice Yu` to the 1st lesson of `CS2100 lab`.<br>
+  Attendance recorded is for week 10 and `Bernice Yu`'s participation score is 70.
 
 <div markdown="block" class="alert alert-info">
 
@@ -963,10 +964,6 @@ For example:
 
    ![Edit attendance after](images/ugimages/EditAttendanceAfter.png)
 
-Other examples:
-* `edit-attendance c\1 l\1 s\1 w\1 p\10` <br>
-  Edits the 1st week's participation score of the 1st student of the 1st lesson of the 1st class to 10 points.
-
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes about the command:**<br>
@@ -1001,15 +998,9 @@ For example:
 
 Other examples:
 * `find-class CS2100 lab`<br>
-  `find-student bernice yu`<br>
+  `find-student Bernice Yu`<br>
   `find-attendance c\1 l\1 s\1 w\10`<br>
-  Shows the attendance of the 1st student in the 1st lesson of the 1st class in the results of the find command.<br>
-  Attendance shown is for week 10.
-
-* `list-student c\1`<br>
-  `find-attendance c\1 l\1 s\2 w\5`<br>
-  Shows the attendance of the 2nd student in the 1st lesson of the 1st class in the results of the list command.<br>
-  Attendance shown is for week 5.
+  Shows the attendance of `Bernice Yu` in week 10, for the 1st lesson of `CS2100 lab`.
 
 <div markdown="block" class="alert alert-info">
 
