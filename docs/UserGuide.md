@@ -7,8 +7,18 @@ title: User Guide
 
 # Tutor's Pet - User Guide
 
+<p style="page-break-before: always"/>
+
+<div class="toc">
+
+<h2>Content Page</h2>
+
 1. Table of Contents
 {:toc}
+
+</div>
+
+<p style="page-break-before: always"/>
 
 ## Introduction
 
@@ -51,6 +61,8 @@ This guide uses the following features to make it easier for you to navigate aro
 </div>
 
 --------------------------------------------------------------------------------------------------------------------
+
+<p style="page-break-before: always"/>
 
 ## Quick Start
 This section provides information on how to quickly start using Tutor's Pet.
@@ -146,6 +158,8 @@ The utility area consists of three tabs: **File**, **Theme** and **Help**.
 
 --------------------------------------------------------------------------------------------------------------------
 
+<p style="page-break-before: always"/>
+
 ## Commands
 
 Commands are the main way you interact with your Tutor's Pet.
@@ -157,9 +171,9 @@ and detailed instructions on how to use each command.
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Notes about the command format:**<br>
+This section provides details about the format of commands used in Tutor's Pet.
 
-This section details the format of the commands available in Tutor's Pet. We will adhere to the following:
+**:information_source: Notes about the command format:**<br>
 
 * Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
   e.g. In `add-student n\NAME`, `NAME` is a parameter which can be used as `add-student n\John Doe`.
@@ -185,6 +199,8 @@ This section details the format of the commands available in Tutor's Pet. We wil
   e.g. `13:00` is allowed, but not `1300`.
 
 </div>
+
+<p style="page-break-before: always"/>
 
 ### Command Overview
 
@@ -226,6 +242,8 @@ This section provides an overview of all commands in Tutor's Pet and illustrates
 
 The following subsections will elaborate on the specific details of each Tutor's Pet command.
 
+<p style="page-break-before: always"/>
+
 ### General
 
 #### Viewing help : `help`
@@ -236,7 +254,7 @@ If you require any assistance, you can use this command. The link to this user g
 
 **Format**: `help`
 
-#### Listing all students and classes : `list`
+#### Listing all students and classes : `list` - Pin Hsuan
 
 You can use this command to see the entire list of students and classes.
 
@@ -252,8 +270,8 @@ For example:
 1. Now, you can see all your students and classes.
 
    ![List after](images/ugimages/ListAfter.png)
-
-#### Undoing a previous change : `undo`
+   
+#### Undoing a previous change : `undo` - Dexter
 
 If you have accidentally entered a command that permanently changes the data in your Tutor's Pet,
 you can use this command to undo the change.
@@ -285,7 +303,7 @@ For example:
 
 </div>
 
-#### Redoing an undone change : `redo`
+#### Redoing an undone change : `redo` - Dexter
 
 If you decide that you do not need to undo a change, you can use this command to redo it.
 
@@ -299,7 +317,7 @@ For example:
 
 1. The undone change will be restored.
 
-#### Viewing change history : `view-history`
+#### Viewing change history : `view-history` - Dexter
 
 You can use this command to see a list of changes that can be undone or redone.
 
@@ -337,7 +355,7 @@ All changes you have made to your Tutor's Pet will be saved.
 
 **Format**: `exit`
 
-#### Resetting the program : `reset`
+#### Resetting the program : `reset` - Pin Hsuan
 
 You can use this command to reset Tutor's Pet. All existing classes and students will be deleted.
 
@@ -354,7 +372,7 @@ For example:
 
    ![Reset after](images/ugimages/ResetAfter.png)
 
-#### Recalling previously entered commands
+#### Recalling previously entered commands - Dexter
 
 If you have to enter a similar command repeatedly, you can use this feature to type less.
 
@@ -379,7 +397,7 @@ There is no need for you to save manually.
 
 ### Managing Students
 
-#### Adding a student : `add-student`
+#### Adding a student : `add-student` - Rui Xuan
 
 If you would like to add a student to Tutor's Pet, use this command.
 
@@ -412,7 +430,7 @@ If you would like to view all students you teach, use this command.
 
 **Format**: `list-student`
 
-#### Editing a student : `edit-student`
+#### Editing a student : `edit-student` - Rui Xuan
 
 If you would like to change a student's particulars, use this command.
 
@@ -448,7 +466,7 @@ Edits the telegram username and email address of the 1st student to `smartlex` a
 *  `edit-student 2 n\Betsy Yu tag\` \
 Edits the name of the 2nd student to `Betsy Yu` and deletes all of her existing tags.
 
-#### Finding a student by name : `find-student`
+#### Finding a student by name : `find-student` - Rui Xuan
 
 If you would like to search for a student by name, use this command.
 
@@ -486,7 +504,7 @@ You want to email him these notes.
 
 </div>
 
-#### Deleting a student : `delete-student`
+#### Deleting a student : `delete-student` - Rui Xuan
 
 If you would like to delete a student, you can make use of this command.
 
@@ -514,7 +532,7 @@ If you would like to delete all students in the application, you can use this co
 
 ### Managing Classes
 
-#### Adding a class : `add-class`
+#### Adding a class : `add-class` - Dexter
 
 If you would like to add a new class, you can use this command.
 
@@ -522,7 +540,7 @@ If you would like to add a new class, you can use this command.
 * Adds a class with the specified `CLASS_NAME`.
 
 For example:
-1. You have just been assigned to teach a tutorial class - Tutorial 3 of module CS1231.
+1. You have just been assigned to teach a tutorial class, Tutorial 3 of module CS1231.
    Hence, you decide to add this new tutorial class to your Tutor's Pet.
 
 1. You type `add-class n\CS1231 Tutorial 3` and press <kbd>Enter</kbd>.
@@ -554,7 +572,7 @@ If you would like to see a list of all classes in your Tutor's Pet, make use of 
 
 **Format**: `list-class`
 
-#### Listing all students within a class : `list-student`
+#### Listing all students within a class : `list-student` - Pin Hsuan
 
 If you would like to see a list of all students in a particular class, make use of this command.
 
@@ -698,7 +716,7 @@ For example:
 
    ![Clear class after](images/ugimages/ClearClassAfter.png)
 
-#### Adding a student to a class : `link`
+#### Adding a student to a class : `link` - Dexter
 
 You can add students into their classes using this command.
 
@@ -731,7 +749,7 @@ Other examples:
   `link s\1 c\2`<br/>
   Adds the 1st result of the `find-student` command to the 2nd class in the displayed class list.
 
-#### Removing a student from a class : `unlink`
+#### Removing a student from a class : `unlink` - Dexter
 
 You can remove students from their classes using this command.
 
@@ -770,7 +788,7 @@ Other examples:
 
 ### Managing Lessons
 
-#### Adding a lesson : `add-lesson`
+#### Adding a lesson : `add-lesson` - Jun Long
 
 If you would like to add a lesson to a class, you can make use of this command.
 
@@ -803,7 +821,7 @@ For example:
 
 </div>
 
-#### Editing a lesson : `edit-lesson`
+#### Editing a lesson : `edit-lesson` - Rui Xuan
 
 If you entered wrong details pertaining to your lesson and would like to change it, you can make use of this command.
 
@@ -840,7 +858,7 @@ Other examples:
 `edit-lesson c\1 l\1 d\TUESDAY st\10:00 et\12:00 v\COM2 #02-02`\
 Edits the 1st lesson of the CS2100 lab. The lesson will now be held on Tuesdays, 10:00AM to 12:00PM at COM2 #02-02.
 
-#### Deleting a lesson : `delete-lesson`
+#### Deleting a lesson : `delete-lesson` - Samantha
 
 If you would like to delete a lesson in a class, you can make use of this command.
 
@@ -872,7 +890,7 @@ the `undo` command. However, you cannot `undo` once you exit the application!
 
 </div>
 
-#### Displaying lesson venue : `display-venue`
+#### Displaying lesson venue : `display-venue` - Samantha
 
 If you would like to find out the venue for a lesson, you can make use of this command.
 
@@ -893,7 +911,7 @@ For example:
 
 ### Managing Attendance Records
 
-#### Adding an attendance record : `add-attendance`
+#### Adding an attendance record : `add-attendance` - Samantha
 
 If you would like to record a new attendance for a student, you can make use of this command.
 
@@ -944,7 +962,7 @@ inputs your most recent command into the command box, allowing you to type less!
 
 </div>
 
-#### Editing an attendance record : `edit-attendance`
+#### Editing an attendance record : `edit-attendance` - Pin Hsuan
 
 You can use this command to edit the attendance and participation score of a student.
 
@@ -1019,7 +1037,7 @@ Other examples:
 
 </div>
 
-#### Deleting an attendance record : `delete-attendance`
+#### Deleting an attendance record : `delete-attendance` - Jun Long
 
 If you would like to delete a specific student's attendance from a lesson, you can make use of this command.
 
