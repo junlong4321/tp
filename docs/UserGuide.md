@@ -594,7 +594,7 @@ Other examples:
 * `list-student c\3` <br>
   Lists all students in the 3rd class.
 
-#### Editing a class : `edit-class`
+#### Editing a class : `edit-class` - Samantha
 
 If you entered the wrong class name or would like to change the name of a class, you can make use of this command.
 
@@ -676,7 +676,7 @@ Other examples:
 
 </div>
 
-#### Deleting a class : `delete-class`
+#### Deleting a class : `delete-class` - Dexter
 
 If you would like to delete a class, you can use this command.
 
