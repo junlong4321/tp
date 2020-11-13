@@ -84,7 +84,7 @@ There are three main areas in Tutor's Pet:
 
 #### Command box and result display box
 
-The command box is the area for you to enter your commands. The result display box is where the result of each command is shown. It is located immediately below the command box.
+The command box is the area for you to enter your commands. The result display box shows the result of each command. It is located immediately below the command box.
 
 ![Command box and result display box](images/ugimages/CommandAndDisplayBox.png)
 
@@ -402,10 +402,6 @@ For example:
 
     ![AddStudentAfter](images/ugimages/AddStudentAfter.png)
 
-Other examples:
-* `add-student n\Betsy Crowe t\betsycrowe e\betsycrowe@example.com tag\excellent` \
-Adds `Betsy Crowe` to Tutor's Pet along with an `excellent` tag.
-
 <div markdown="block" class="alert alert-primary">
 
 :bulb: **Tip:** A student can have any number of tags (including 0).
@@ -447,12 +443,6 @@ For example:
 * You can remove all the tags of a student by typing `tag\` without specifying any tags after it.
 
 </div>
-
-Other examples:
-*  `edit-student 1 t\smartlex e\yeohalex@example.com` \
-Edits the telegram username and email address of the 1st student to `smartlex` and `yeohalex@example.com` respectively.
-*  `edit-student 2 n\Betsy Yu tag\` \
-Edits the name of the 2nd student to `Betsy Yu` and deletes all of her existing tags.
 
 #### Finding a student by name : `find-student`
 
@@ -549,11 +539,6 @@ For example:
 
 </div>
 
-Other examples:
-
-* `add-class n\CS1101S T02D`<br/>
-  Adds `CS1101S T02D` to your Tutor's Pet.
-
 #### Listing all classes : `list-class`
 
 If you would like to see a list of all classes in your Tutor's Pet, make use of this command.
@@ -577,10 +562,6 @@ For example:
 1. You can see that the 2 students in your `CS2100 Lab` have been listed.
 
    ![List students in class after](images/ugimages/ListStudentsInClassAfter.png)
-
-Other examples:
-* `list-student c\3` <br>
-  Lists all students in the 3rd class.
 
 #### Editing a class : `edit-class`
 
@@ -609,11 +590,6 @@ For example:
 
 </div>
 
-Other examples:
-* `find-class CS2030 lab`<br>
-  `edit-class 1 n\CS2030 lab L05`<br>
-  Edits the name of `CS2030 lab` to `CS2030 lab L05`.
-
 <div markdown="block" class="alert alert-primary">
 
 :bulb: **Tip:** Make use of the  [`find-class`](#finding-a-class-by-name--find-class) command to filter the displayed class list to your
@@ -637,12 +613,6 @@ For example:
 1. You find out that you are only teaching 2 tutorials this semester and hence decide to accept more classes.
 
    ![Find class after](images/ugimages/FindClassAfter.png)
-
-Other examples:
-* `find-class CS2100`<br>
-  Displays `CS2100 tut` and `CS2100 lab`.
-* `find-class tut CS2030`<br>
-  Displays `CS2103T tut`and `CS2030 lab`.
 
 <div markdown="block" class="alert alert-info">
 
@@ -682,11 +652,6 @@ For example:
 1. The class has been successfully deleted.
 
    ![DeleteClassAfter](images/ugimages/DeleteClassAfter.png)
-
-Other examples:
-* `find-class CS2030 lab`<br/>
-  `delete-class 1`<br/>
-  Deletes the `CS2030 lab` class.
 
 #### Clearing all classes : `clear-class`
 
@@ -732,11 +697,6 @@ entered commands. This reduces the amount you need to type.
 
 </div>
 
-Other examples:
-* `find-student Alex`<br/>
-  `link s\1 c\2`<br/>
-  Adds the 1st student with name `Alex`, to the 2nd class in the displayed class list.
-
 #### Removing a student from a class : `unlink`
 
 You can remove students from their classes using this command.
@@ -768,11 +728,6 @@ of a particular class. Now it is easier for you to find the student to remove.
 :warning: **Caution:** The student's attendance in the class will be deleted.
 
 </div>
-
-Other examples:
-* `list-student c\2`<br/>
-  `unlink s\1 c\1`<br/>
-  [Lists the students](#listing-all-students-within-a-class--list-student) of the 2nd class in your Tutor's Pet, say `CS2100 lab`. Then, removes the 1st student of `CS2100 lab`.
 
 ### Managing Lessons
 
@@ -841,11 +796,6 @@ For example:
 
 </div>
 
-Other examples:
-*  `find-class CS2100 lab`\
-`edit-lesson c\1 l\1 d\TUESDAY st\10:00 et\12:00 v\COM2 #02-02`\
-Edits the 1st lesson of `CS2100 lab`. The lesson will now be held on Tuesdays, 10:00AM to 12:00PM at COM2 #02-02.
-
 #### Deleting a lesson : `delete-lesson`
 
 If you would like to delete a lesson in a class, you can make use of this command.
@@ -865,11 +815,6 @@ For example:
 1. You have one less lesson to teach now.
 
    ![Delete lesson after](images/ugimages/DeleteLessonAfter.png)
-
-Other examples:
-* `find-class CS2030 lab`<br>
-  `delete-lesson c\1 l\1`<br>
-  Deletes the 1st lesson of `CS2030 lab`.
 
 <div markdown="block" class="alert alert-primary">
 
@@ -919,13 +864,6 @@ For example:
 1. You have successfully recorded Alex's attendance.
 
    ![Add attendance after](images/ugimages/AddAttendanceAfter.png)
-
-Other examples:
-* `find-class CS2100 lab`<br>
-  `find-student Bernice Yu`<br>
-  `add-attendance c\1 l\1 s\1 w\10 p\70`<br>
-  Adds the attendance of `Bernice Yu` to the 1st lesson of `CS2100 lab`.<br>
-  Attendance recorded is for week 10 and `Bernice Yu`'s participation score is 70.
 
 <div markdown="block" class="alert alert-info">
 
@@ -995,12 +933,6 @@ For example:
 1. Now, you can find out if Alex attended the first lesson and his participation score in week 1.
 
    ![Find attendance after](images/ugimages/FindAttendanceAfter.png)
-
-Other examples:
-* `find-class CS2100 lab`<br>
-  `find-student Bernice Yu`<br>
-  `find-attendance c\1 l\1 s\1 w\10`<br>
-  Shows the attendance of `Bernice Yu` in week 10, for the 1st lesson of `CS2100 lab`.
 
 <div markdown="block" class="alert alert-info">
 
