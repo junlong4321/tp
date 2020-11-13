@@ -250,8 +250,6 @@ The following subsections will elaborate on each Tutor's Pet command.
 
 <p style="page-break-before: always"/>
 
-<p style="page-break-before: always"/>
-
 ### General
 
 #### Viewing help : `help`
